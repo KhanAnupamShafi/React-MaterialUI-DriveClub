@@ -15,12 +15,12 @@ const Footer = () => {
   return (
     <div>
       <AppBar position="static" sx={{ marginTop: 20 }}>
-        <footer class="footer_area bg-dark p-5 m-1">
-          <div class="container  p-3">
-            <div class="row">
-              <div class="col-12 col-sm-6 col-lg-4">
-                <div class="single-footer-widget section_padding_0_130">
-                  <div class="footer-logo "></div>
+        <footer className="footer_area bg-dark p-5 m-1">
+          <div className="container  p-3">
+            <div className="row">
+              <div className="col-12 col-sm-6 col-lg-4">
+                <div className="single-footer-widget section_padding_0_130">
+                  <div className="footer-logo "></div>
                   <h5 className="p-2">2021 Safe Drive Driving School.</h5>
                   <img className="mx-5" src={logo} alt="" />
                   <p>
@@ -29,19 +29,16 @@ const Footer = () => {
                     safely on the roads.
                   </p>
 
-                  <div class="copywrite-text mb-5">
-                    <p class="mb-0">
+                  <div className="copywrite-text mb-5">
+                    <p className="mb-0">
                       @ Copywright <HealthAndSafetySharp /> <span> </span>
-                      <Link
-                        class="ml-1"
-                        href="https://wrapbootstrap.com/user/DesigningWorld"
-                      >
+                      <Link className="ml-1" to="/">
                         Khan Anupam Shafi
                       </Link>
                     </p>
                   </div>
 
-                  <div class="footer_social_area">
+                  <div className="footer_social_area">
                     <Link
                       to="/"
                       data-toggle="tooltip"
@@ -52,7 +49,7 @@ const Footer = () => {
                       <Facebook />
                     </Link>
                     <Link
-                      href="#"
+                      to="/"
                       data-toggle="tooltip"
                       data-placement="top"
                       title=""
@@ -61,7 +58,7 @@ const Footer = () => {
                       <Pinterest />
                     </Link>
                     <Link
-                      href="#"
+                      to="/"
                       data-toggle="tooltip"
                       data-placement="top"
                       title=""
@@ -70,7 +67,7 @@ const Footer = () => {
                       <SevenK />
                     </Link>
                     <Link
-                      href="#"
+                      to="/"
                       data-toggle="tooltip"
                       data-placement="top"
                       title=""
@@ -82,72 +79,72 @@ const Footer = () => {
                 </div>
               </div>
 
-              <div class="col-12 col-sm-6 col-lg">
-                <div class="single-footer-widget section_padding_0_130">
-                  <h5 class="widget-title">About</h5>
+              <div className="col-12 col-sm-6 col-lg">
+                <div className="single-footer-widget section_padding_0_130">
+                  <h5 className="widget-title">About</h5>
 
-                  <div class="footer_menu text">
+                  <div className="footer_menu text">
                     <ul>
                       <li>
                         <Link to="/about">About Us</Link>
                       </li>
                       <li>
-                        <Link href="/about">Corporate Sale</Link>
+                        <Link to="/about">Corporate Sale</Link>
                       </li>
                       <li>
-                        <Link href="/about">Terms &amp; Policy</Link>
+                        <Link to="/about">Terms &amp; Policy</Link>
                       </li>
                       <li>
-                        <Link href="/about">Community</Link>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-
-              <div class="col-12 col-sm-6 col-lg">
-                <div class="single-footer-widget section_padding_0_130">
-                  <h5 class="widget-title">Support</h5>
-
-                  <div class="footer_menu">
-                    <ul>
-                      <li>
-                        <Link href="#">Help</Link>
-                      </li>
-                      <li>
-                        <Link href="#">Support</Link>
-                      </li>
-                      <li>
-                        <Link href="#">Privacy Policy</Link>
-                      </li>
-                      <li>
-                        <Link href="#">Term &amp; Conditions</Link>
-                      </li>
-                      <li>
-                        <Link href="#">Help &amp; Support</Link>
+                        <Link to="/about">Community</Link>
                       </li>
                     </ul>
                   </div>
                 </div>
               </div>
 
-              <div class="col-12 col-sm-6 col-lg">
-                <div class="single-footer-widget section_padding_0_130">
-                  <h5 class="widget-title">Contact</h5>
+              <div className="col-12 col-sm-6 col-lg">
+                <div className="single-footer-widget section_padding_0_130">
+                  <h5 className="widget-title">Support</h5>
 
-                  <div class="footer_menu ">
+                  <div className="footer_menu">
                     <ul>
                       <li>
-                        <Link href="#">Call Centre</Link>
+                        <Link to="/">Help</Link>
                       </li>
                       <li>
-                        <Link href="#">Email Us</Link>
+                        <Link to="/">Support</Link>
                       </li>
                       <li>
-                        <Link href="#">Term &amp; Conditions</Link>
+                        <Link to="/">Privacy Policy</Link>
                       </li>
                       <li>
-                        <Link href="#">Help Center</Link>
+                        <Link to="/">Term &amp; Conditions</Link>
+                      </li>
+                      <li>
+                        <Link to="/">Help &amp; Support</Link>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+
+              <div className="col-12 col-sm-6 col-lg">
+                <div className="single-footer-widget section_padding_0_130">
+                  <h5 className="widget-title">Contact</h5>
+
+                  <div className="footer_menu ">
+                    <ul>
+                      <li>
+                        <Link to="/">Call Centre</Link>
+                      </li>
+                      <li>
+                        <Link to="/">Email Us</Link>
+                      </li>
+                      <li>
+                        <Link to="/">Term &amp; Conditions</Link>
+                      </li>
+                      <li>
+                        <Link to="/">Help Center</Link>
                       </li>
                     </ul>
                   </div>

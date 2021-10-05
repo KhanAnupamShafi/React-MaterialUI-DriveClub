@@ -16,7 +16,7 @@ const Service = () => {
     <>
       <Row sm={1} md={2} className="g-5 m-4">
         {services?.map((service) => (
-          <Col>
+          <Col key={service.index}>
             <Box
               sx={{
                 display: "flex",
@@ -71,7 +71,7 @@ const Service = () => {
                     {service.program}
                   </Card.Title>
                   <Card.Text>{service.about.slice(0, 195)}</Card.Text>
-                  <hr class="my-4"></hr>
+                  <hr className="my-4"></hr>
 
                   <Button
                     sx={{ display: "block", width: "100%" }}

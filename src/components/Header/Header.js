@@ -1,31 +1,92 @@
-import { CarRentalOutlined } from "@mui/icons-material";
-import { Typography } from "@mui/material";
-import React from "react";
+import {
+  AlarmTwoTone,
+  Favorite,
+  PhoneAndroidTwoTone,
+  Room,
+} from "@mui/icons-material";
+import {
+  AppBar,
+  BottomNavigation,
+  BottomNavigationAction,
+  Toolbar,
+} from "@mui/material";
+import { Box } from "@mui/system";
+import React, { useState } from "react";
 import { Container, Nav, Navbar } from "react-bootstrap";
 import { NavLink } from "react-router-dom";
 
-import logo from "../../Images/logo.jpg";
+import logo from "../../Images/logo.png";
 import "./Header.css";
 
+/* ---------------------------  header section -------------------------- */
 const Header = () => {
+  // Top Bar Select State
+
+  const [value, setValue] = useState(0);
+
   return (
     <>
+      <Box sx={{ width: "100vw" }}>
+        <AppBar
+          position="static"
+          sx={{ alignItems: "center", background: "#373737" }}
+        >
+          <Toolbar>
+            <BottomNavigation
+              sx={{
+                width: "100vw",
+                marginBottom: "6px",
+              }}
+              showLabels
+              value={value}
+              onChange={(event, newValue) => {
+                setValue(newValue);
+              }}
+            >
+              <BottomNavigationAction
+                sx={{ flexDirection: "revert" }}
+                label="Asian City, Dhaka, BD"
+                icon={<Room />}
+              />
+              <BottomNavigationAction
+                sx={{ flexDirection: "revert" }}
+                label="088-0171-234"
+                icon={<PhoneAndroidTwoTone />}
+              />
+              <BottomNavigationAction
+                sx={{ flexDirection: "revert" }}
+                label="anupamdip@nsu.edu"
+                icon={<Favorite />}
+              />
+              <BottomNavigationAction
+                sx={{ flexDirection: "revert" }}
+                label="9AM-6PM / 6 Days"
+                icon={<AlarmTwoTone />}
+              />
+            </BottomNavigation>
+          </Toolbar>
+        </AppBar>
+      </Box>
       <Navbar
         collapseOnSelect
         expand="lg"
-        style={{ background: "#512da8", fontSize: "1.2vw", padding: 20 }}
+        style={{
+          backgroundColor: "#f1dfd1",
+          backgroundImage: "linear-gradient(315deg, #f1dfd1 0%, #f6f0ea 74%)",
+          fontSize: "1.5rem",
+          padding: 20,
+        }}
       >
         <Container>
           <Navbar.Brand href="#home">
             <img
               src={logo}
-              width="30"
-              height="30"
+              width="150"
+              height="100"
               className="d-inline-block align-top"
               alt="React Bootstrap logo"
+              style={{ background: "transparent" }}
             />
-            <CarRentalOutlined fontSize="large" />{" "}
-            <Typography variant="h4">DriveClub</Typography>
           </Navbar.Brand>
           <Navbar.Toggle
             aria-controls="responsive-navbar-nav"
@@ -40,7 +101,7 @@ const Header = () => {
                   className="tags"
                   activeStyle={{
                     fontWeight: "bold",
-                    color: "#fff",
+                    color: "#fe421d",
                   }}
                 >
                   Home
@@ -51,7 +112,7 @@ const Header = () => {
                   className="tags"
                   to="/service"
                   activeStyle={{
-                    color: "#fff",
+                    color: "#fe421d",
                   }}
                 >
                   Our Services
@@ -62,7 +123,7 @@ const Header = () => {
                   className="tags"
                   to="/about"
                   activeStyle={{
-                    color: "#fff",
+                    color: "#fe421d",
                   }}
                 >
                   About Us
@@ -73,7 +134,7 @@ const Header = () => {
                   className="tags"
                   to="/testimonial"
                   activeStyle={{
-                    color: "#fff",
+                    color: "#fe421d",
                   }}
                 >
                   Testimonials

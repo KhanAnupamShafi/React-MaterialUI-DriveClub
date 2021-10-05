@@ -8,13 +8,27 @@ import { Link } from "react-router-dom";
 
 const Testimonial = () => {
   return (
-    <div className="container-fluid mt-5">
-      <Typography variant="h4" sx={{ color: "#1b98fb", textAlign: "center" }}>
-        <TextsmsTwoTone /> What’s Our Clients Say...
-        <p style={{ color: "black", fontSize: "1vw" }}>
-          Read some comments from students that have passed their driving
-          lessons with us
-        </p>
+    <div className="container-fluid mt-5 ">
+      <Typography
+        sx={{
+          color: "#1b98fb",
+
+          textAlign: "center",
+          fontSize: "3rem",
+        }}
+      >
+        <TextsmsTwoTone fontSize="larger" /> What’s Our Clients Say... <br />
+      </Typography>
+      <Typography
+        variant="h5"
+        sx={{
+          padding: "5px",
+          color: "#fE219b",
+          textAlign: "center",
+        }}
+      >
+        Read some comments from our valued clients that have passed their
+        driving lessons with us
       </Typography>
 
       <div className="bg-white py-5">
@@ -34,29 +48,29 @@ const Testimonial = () => {
                 progression whilst making the lesson enjoyable."{" "}
               </p>
               <Link
-                to="/"
+                to="/testimonial"
                 className="btn btn-light px-5 rounded-pill shadow-sm"
               >
-                <Rating name="simple-controlled" value={5} />
+                <Rating name="read-only" value={5} readOnly />
               </Link>
             </div>
-            <hr class="my-4"></hr>
+            <hr className="my-4"></hr>
             <div className="col-lg-5 px-5 mx-auto order-1 order-lg-2">
               <Image
                 className="img-fluid mb-4 mb-lg-0"
-                width="400"
+                width="370"
                 src="https://i.ibb.co/kmcTdFs/image-19.jpg"
                 roundedCircle
               />
             </div>
           </div>
-          <hr class="my-4"></hr>
+          <hr className="my-4"></hr>
 
           <div className="row align-items-center">
             <div className="col-lg-5 px-5 mx-auto">
               <Image
                 className="img-fluid mb-4 mb-lg-0"
-                width="400"
+                width="370"
                 src="https://i.ibb.co/myJSw3j/image-28.jpg"
                 roundedCircle
               />
@@ -74,10 +88,10 @@ const Testimonial = () => {
                 such ease.”
               </p>
               <Link
-                to="/"
+                to="/testimonial"
                 className="btn btn-light px-5 rounded-pill shadow-sm"
               >
-                <Rating name="simple-controlled" value={4.2} />
+                <Rating name="read-only" value={4.2} readOnly />
               </Link>
             </div>
 
@@ -95,28 +109,28 @@ const Testimonial = () => {
                 progression whilst making the lesson enjoyable.
               </p>
               <Link
-                to="/"
+                to="/testimonial"
                 className="btn btn-light px-5 rounded-pill shadow-sm"
               >
-                <Rating name="simple-controlled" value={4.2} />
+                <Rating name="read-only" readOnly value={4.2} />
               </Link>
             </div>
-            <hr class="my-4"></hr>
+            <hr className="my-4"></hr>
             <div className="col-lg-5 px-5 mx-auto order-1 order-lg-2">
               <Image
                 className="img-fluid mb-4 mb-lg-0"
-                width="400"
+                width="370"
                 src="https://i.ibb.co/9T9Wgm5/image-3.jpg"
                 roundedCircle
               />
             </div>
           </div>
-          <hr class="my-4"></hr>
+          <hr className="my-4"></hr>
           <div className="row align-items-center">
             <div className="col-lg-5 px-5 mx-auto">
               <Image
                 className="img-fluid mb-4 mb-lg-0"
-                width="400"
+                width="370"
                 src="https://i.ibb.co/dWZDKBs/image-6.jpg"
                 roundedCircle
               />
@@ -136,10 +150,10 @@ const Testimonial = () => {
                 support I needed throughout the lessons and the test process."
               </p>
               <Link
-                to="/"
+                to="/testimonial"
                 className="btn btn-light px-5 rounded-pill shadow-sm"
               >
-                <Rating name="simple-controlled" value={5} />
+                <Rating name="read-only" readOnly value={5} />
               </Link>
             </div>
           </div>

@@ -1,33 +1,35 @@
-/* ------------------------------- media query ------------------------------ */
-@media (min-width: 576px) {
-  .carousel-caption h3 {
-    font-size: 1.3em;
-  }
-  .carousel-caption p {
-    font-size: 1.1em;
-  }
+/* ------------------------- banner overlays styles ------------------------- */
+.primary-overlay {
+  position: relative;
 }
-@media (min-width: 768px) {
-  .carousel-caption h3 {
-    font-size: 1.4em;
-  }
-  .carousel-caption p {
-    font-size: 1.2em;
-  }
+
+.primary-overlay::after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  content: " ";
+  opacity: 0.85;
+  background: linear-gradient(to right, #3204fdba, #9907facc);
 }
-@media (min-width: 992px) {
-  .carousel-caption h3 {
-    font-size: 1.5em;
-  }
-  .carousel-caption p {
-    font-size: 1.3em;
-  }
+
+.overlay-content {
+  position: relative;
+  z-index: 20;
 }
-@media (min-width: 1200px) {
-  .carousel-caption h3 {
-    font-size: 1.6em;
-  }
-  .carousel-caption p {
-    font-size: 1.4em;
-  }
+
+.dark-overlay {
+  position: relative;
+}
+
+.dark-overlay::after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  content: " ";
+  opacity: 0.9;
+  background: #111;
 }
