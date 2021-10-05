@@ -35,8 +35,10 @@ const Service = () => {
                   alt="Remy Sharp"
                   src={service.picture}
                 />
-                <div className="container-fluid m-auto text-center">
-                  <p>Pricing</p>
+                <div className="container-fluid m-auto fs-5 text-center">
+                  <p>
+                    Pricing <br /> Starts from
+                  </p>
                   <h2 className="card-title pricing-card-title">
                     ${service.price} <small className="text-muted">/ mo</small>
                   </h2>

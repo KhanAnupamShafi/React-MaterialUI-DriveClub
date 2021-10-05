@@ -1,4 +1,4 @@
-import { TextsmsTwoTone } from "@mui/icons-material";
+import { FormatQuote, TextsmsTwoTone } from "@mui/icons-material";
 import { Rating, Typography } from "@mui/material";
 import React from "react";
 import { Image } from "react-bootstrap";
@@ -8,7 +8,7 @@ import { Link } from "react-router-dom";
 
 const Testimonial = () => {
   return (
-    <div className="container-fluid mt-5 ">
+    <div className="container-fluid mt-5 p-0 ">
       <Typography
         sx={{
           color: "#1b98fb",
@@ -35,8 +35,8 @@ const Testimonial = () => {
         <div className="container py-5">
           <div className="row align-items-center mb-5">
             <div className="col-lg-6 order-2 order-lg-1">
-              <i className="fa fa-bar-chart fa-2x mb-3 text-primary"></i>
-              <h2 className="font-weight-light"> - Marcus P.</h2>
+              <h2 className="font-weight-light">- Marcus P.</h2>
+
               <p className="font-italic text-muted mb-4">
                 "I was able to pass my practice driving test today on my first
                 attempt,all thanks to John.He really is an amazing instructor
@@ -56,6 +56,7 @@ const Testimonial = () => {
             </div>
             <hr className="my-4"></hr>
             <div className="col-lg-5 px-5 mx-auto order-1 order-lg-2">
+              <FormatQuote fontSize="large" />
               <Image
                 className="img-fluid mb-4 mb-lg-0"
                 width="370"
@@ -74,9 +75,9 @@ const Testimonial = () => {
                 src="https://i.ibb.co/myJSw3j/image-28.jpg"
                 roundedCircle
               />
+              <FormatQuote fontSize="large" />
             </div>
             <div className="col-lg-6">
-              <i className="fa fa-leaf fa-2x mb-3 text-primary"></i>
               <h2 className="font-weight-light">- Michelle K.</h2>
               <p className="font-italic text-muted mb-4">
                 "John is a fantastic instructor and made him feel really
@@ -96,7 +97,6 @@ const Testimonial = () => {
             </div>
 
             <div className="col-lg-6 order-2 order-lg-1">
-              <i className="fa fa-bar-chart fa-2x mb-3 text-primary"></i>
               <h2 className="font-weight-light"> - Marcus P.</h2>
               <p className="font-italic text-muted mb-4">
                 I was able to pass my practice driving test today on my first
@@ -117,6 +117,7 @@ const Testimonial = () => {
             </div>
             <hr className="my-4"></hr>
             <div className="col-lg-5 px-5 mx-auto order-1 order-lg-2">
+              <FormatQuote fontSize="large" />
               <Image
                 className="img-fluid mb-4 mb-lg-0"
                 width="370"
@@ -134,9 +135,9 @@ const Testimonial = () => {
                 src="https://i.ibb.co/dWZDKBs/image-6.jpg"
                 roundedCircle
               />
+              <FormatQuote fontSize="large" />
             </div>
             <div className="col-lg-6">
-              <i className="fa fa-leaf fa-2x mb-3 text-primary"></i>
               <h2 className="font-weight-light"> - Clarice N</h2>
               <p className="font-italic text-muted mb-4">
                 "Throughout my time with pass driving school I had the pleasure
@@ -159,6 +160,52 @@ const Testimonial = () => {
           </div>
         </div>
       </div>
+
+      <footer>
+        {/* /* --------------------------- experiences section -------------------------- */}
+        <div
+          className="py-5 text-white"
+          style={{ backgroundColor: " #ff5637" }}
+        >
+          <div className="container">
+            <div className="row ">
+              <div className="col-lg-3 col-md-6 mb-4 mb-lg-0 ">
+                <div className="d-flex align-items-center">
+                  <h6 className="h1 mb-0">1705 </h6>
+                  <p className="ms-3 flex-grow-1 text-uppercase mb-0">
+                    Lessons Given
+                  </p>
+                </div>
+              </div>
+              <div className="col-lg-3 col-md-6 mb-4 mb-lg-0">
+                <div className="d-flex align-items-center">
+                  <h6 className="h1 mb-0">809</h6>
+                  <p className="ms-3 flex-grow-1 text-uppercase mb-0">
+                    Satisfied customers
+                  </p>
+                </div>
+              </div>
+              <div className="col-lg-3 col-md-6 mb-4 mb-lg-0">
+                <div className="d-flex align-items-center">
+                  <h6 className="h1 mb-0">354</h6>
+                  <p className="ms-3 flex-grow-1 text-uppercase mb-0">
+                    Awards recieved
+                  </p>
+                </div>
+              </div>
+              <div className="col-lg-3 col-md-6 mb-4 mb-lg-0">
+                <div className="d-flex align-items-center">
+                  <h6 className="h1 mb-0">35</h6>
+                  <p className="ms-3 flex-grow-1 text-uppercase mb-0">
+                    Years of experience
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+      {/* experiencs ends */}
     </div>
   );
 };

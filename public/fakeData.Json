@@ -22,7 +22,7 @@
     "title": "Driving license",
     "picture": "https://i.ibb.co/qCFpg4V/3.png",
     "program": "Program for Senior",
-    "about": "The Systematic Alien Verification for Entitlements (SAVE) program is a service provided by the US Citizenship and Immigration Services (USCIS) that allows DPS to verify the immigration status and in some cases, the US citizenship of applicants for a driver license or identification card..\r\n",
+    "about": "Senior Defensive Driving Program. Bills Defensive Driving School offers a senior driving course and has developed a reputation for success in assisting seniors ....\r\n",
     "price": "168",
     "registration": "15-Oct-2021"
   },
@@ -56,28 +56,29 @@
   {
     "index": 7,
     "title": "LEARNERS PERMIT SERVICES",
-    "picture": "https://i.ibb.co/7bzY3NR/7.png",
+    "picture": "https://i.ibb.co/jv7XGfw/7.jpg",
     "program": "DUI/RISK REDUCTION CLASSES",
     "about": "– Driving Under the Influence (DUI), regardless of whether or not it has been reduced to Reckless Driving– Drug-related charges The most crucial deciding factors on whether or not to register for a DUI Level I or DUI Level II are listed below.  If you meet any single one of the following, you will be required to complete a DUI Level II, rather than a DUI Level I:.\r\n",
     "price": "191",
     "registration": "5-Oct-2021"
   },
+
   {
     "index": 8,
+    "title": "ROAD TEST SERVICES",
+    "picture": "https://i.ibb.co/8D2gGCC/9.jpg",
+    "program": "4 POINT REDUCTION PROGRAM",
+    "about": "4 POINT REDUCTION PROGRAM includes highly skilled instructors teach all ages and use their expertise to make learning easy and enjoyable. \r\n",
+    "price": "141",
+    "registration": "5-Oct-2021"
+  },
+  {
+    "index": 9,
     "title": "FOR AUTO & MOTORCYCLE",
-    "picture": "https://i.ibb.co/7bzY3NR/8.png",
+    "picture": "https://i.ibb.co/GTF4XrW/8.jpg",
     "program": "12-HOURS ADI",
     "about": "The 12 Hour ADI Course is a class required by Florida drivers that have received a court order to attend an Advanced Driver Improvement class, or have had a license suspended or revoked for Non-DUI related citations.The 24 Hour ADI Course is a class  Improvement class, or have had a license suspended or revoked for Non-DUI related citations..\r\n",
     "price": "117",
     "registration": "1-Nov-2021"
-  },
-  {
-    "index": 9,
-    "title": "ROAD TEST SERVICES",
-    "picture": "https://i.ibb.co/7bzY3NR/9.png",
-    "program": "4 POINT REDUCTION PROGRAM",
-    "about": "4 POINT REDUCTION PROGRAM includes highly skilled instructors teach all ages and use their expertise to make learning easy and enjoyable. They work hard to give their students a great learning experience, their undivided attention, continuity in the learning process, and to instill confidence in their students..\r\n",
-    "price": "141",
-    "registration": "5-Oct-2021"
   }
 ]

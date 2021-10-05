@@ -1,6 +1,5 @@
 import React from "react";
 import { Col, Container, Form, Row } from "react-bootstrap";
-import Button from "@mui/material/Button";
 import aboutimage from "../../Images/img-car.png";
 import { Home, Instagram, LinkedIn, Twitter } from "@mui/icons-material";
 
@@ -208,35 +207,82 @@ const About = () => {
         </Row>
       </Container>
 
-      <div className="col-lg-5 text-center ">
-        <h2 className="display-4 font-weight-light m-5">Contact Us</h2>
-        <h5 className="font-italic text-muted">Leave us a message</h5>
+      <div className="container-fluid">
+        <div className="col-lg-5  m-auto">
+          <h2 className="display-4 font-weight-light m-5 text-center">
+            Have a <span className="text-danger">Question?</span>
+          </h2>
+          <h5 className="font-italic text-muted">Leave us a message</h5>
+        </div>
       </div>
 
-      <Form className="m-auto w-50 p-5">
-        <Form.Group className="mb-3" controlId="formBasicEmail">
-          <Form.Label>Email address</Form.Label>
-          <Form.Control type="email" placeholder="Enter email" />
-          <Form.Text className="text-muted">
-            We'll never share your email with anyone else.
-          </Form.Text>
-        </Form.Group>
-
-        <Form.Group className="mb-3" controlId="formBasicPassword">
-          <Form.Label>Password</Form.Label>
-          <Form.Control type="password" placeholder="Password" />
-        </Form.Group>
-        <Form.Group className="mb-3" controlId="formBasicCheckbox">
-          <Form.Check type="checkbox" label="Check me out" />
-        </Form.Group>
-        <Button
-          variant="Secondary"
-          sx={{ color: "blue", background: "error" }}
-          type="submit"
-        >
-          Submit
-        </Button>
-      </Form>
+      <div className="container justify-content-center">
+        <div className="row justify-content-center">
+          <div className="col-lg-7 mb-5 mb-lg-0">
+            <div className="pt-1 bg-primary">
+              <div className="p-4 p-lg-5 bg-white shadow-sm">
+                <Form action="#">
+                  <div className="row">
+                    <div className="form-group col-lg-6">
+                      <input
+                        className="form-control"
+                        type="text"
+                        name="firstname"
+                        placeholder="First name"
+                      />
+                    </div>
+                    <div className="form-group col-lg-6">
+                      <input
+                        className="form-control"
+                        type="text"
+                        name="lastname"
+                        placeholder="Last name"
+                      />
+                    </div>
+                    <div className="form-group col-lg-6">
+                      <input
+                        className="form-control"
+                        type="tel"
+                        name="phone"
+                        placeholder="Phone number"
+                      />
+                    </div>
+                    <div className="form-group col-lg-6">
+                      <input
+                        className="form-control"
+                        type="text"
+                        name="subject"
+                        placeholder="Subject"
+                      />
+                    </div>
+                    <div className="form-group col-lg-12">
+                      <input
+                        className="form-control"
+                        type="email"
+                        name="email"
+                        placeholder="Email address"
+                      />
+                    </div>
+                    <div className="form-group col-lg-12">
+                      <textarea
+                        className="form-control"
+                        name="message"
+                        rows="5"
+                        placeholder="Leave your message"
+                      ></textarea>
+                    </div>
+                    <div className="form-group col-lg-12">
+                      <button className="btn btn-outline-primary" type="submit">
+                        Submit now
+                      </button>
+                    </div>
+                  </div>
+                </Form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </>
   );
 };

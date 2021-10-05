@@ -1,11 +1,11 @@
 .tags {
   position: relative;
-  color: #373737;
+  color: #3e3131;
   font-weight: bold;
   text-decoration: none;
 }
 .tags:hover {
-  color: #ff6742;
+  color: #130f0f;
 }
 
 .tags::before {

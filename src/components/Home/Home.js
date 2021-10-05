@@ -1,4 +1,6 @@
 import React from "react";
+import { useState } from "react";
+import { useEffect } from "react";
 import { Carousel } from "react-bootstrap";
 import Card from "@mui/material/Card";
 import CardActions from "@mui/material/CardActions";
@@ -15,18 +17,17 @@ import slide02 from "../../Images/slide-02.jpg";
 import slide03 from "../../Images/slide-03.jpg";
 import HeroBanner from "../../Images/hero-banner.jpg";
 import HeroLogo from "../../Images/hero-logo.png";
+import ServiceBg from "../../Images/service-bg.jpg";
 
-import { useState } from "react";
-import { useEffect } from "react";
-
-import "./Home.css";
 import {
   Accessibility,
   BadgeRounded,
   CarRentalTwoTone,
   InfoTwoTone,
+  RoomService,
 } from "@mui/icons-material";
 import { Link } from "react-router-dom";
+import "./Home.css";
 
 const useStyles = makeStyles({
   gridContainer: {
@@ -88,8 +89,8 @@ const Home = () => {
   return (
     <div>
       <CarouselHome />
-      <br />
-      <Grid sx={{ textAlign: "center", mx: 2 }}>
+      <hr></hr>
+      <Grid sx={{ textAlign: "center", mx: 2, background: "#efe7e5" }}>
         <Box className={classes.boxLine}>
           <Typography sx={{ fontSize: "1.9rem" }}>
             OUR PROGRAMS <CarRentalTwoTone fontSize="large" />
@@ -97,10 +98,11 @@ const Home = () => {
         </Box>
       </Grid>
       <br />
+      {/* Service Section */}
       <section
         className="bg-center bg-cover"
         style={{
-          backgroundImage: `url(${HeroBanner})`,
+          backgroundImage: `url(${ServiceBg})`,
           backgroundSize: "cover",
           backgroundRepeat: "no-repeat",
           backgroundPosition: "center center",
@@ -112,7 +114,7 @@ const Home = () => {
               We make a difference
             </p>
             <h2 className="h1 mb-5">
-              The Best Solutions For Developing Your Business
+              The Best Solution For Your Driving Lessons
             </h2>
 
             <Box
@@ -150,7 +152,7 @@ const Home = () => {
                         component="div"
                         sx={{
                           textAlign: "center",
-                          fontSize: "1.5vw",
+
                           background: "#fdc400",
                           borderRadius: "10px",
                         }}
@@ -168,7 +170,7 @@ const Home = () => {
                       <BadgeRounded /> {service.index}
                     </ListSubheader>
                     <CardContent>
-                      <Typography variant="body2" color="text.secondary">
+                      <Typography variant="body1" color="text.secondary">
                         {service.about.slice(0, 150)}
                       </Typography>
                     </CardContent>
@@ -183,16 +185,22 @@ const Home = () => {
                 ))}
               </Grid>
             </Box>
-            <Link className="btn btn-primary" to="/service">
-              View more services
+            <Link className="btn text-bold" to="/service">
+              <Button
+                variant="outlined"
+                size="large"
+                startIcon={<RoomService />}
+                sx={{ fontWeight: "800" }}
+              >
+                View more services
+              </Button>
             </Link>
           </div>
         </div>
       </section>
-      {/* /* ----------------------- //  <!-- Video Section --> ----------------------- */}
       ;{/* <!-- Divider Section --> */}
       <section
-        className="bg-cover bg-center"
+        className="bg-cover bg-center my-5"
         style={{
           backgroundImage: `url(${HeroBanner})`,
           backgroundSize: "cover",
@@ -300,12 +308,7 @@ const CarouselHome = () => {
         </Carousel.Caption>
       </Carousel.Item>
       <Carousel.Item className="justify-content-center">
-        <img
-          className="d-block w-100"
-          src={slide03}
-          alt="Third slide"
-          style={{ filter: "brightness(90%)" }}
-        />
+        <img className="d-block w-100" src={slide03} alt="Third slide" />
         <Carousel.Caption
           className="d-none d-sm-block"
           style={carouselCaption2}

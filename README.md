@@ -25,8 +25,9 @@ This project is deployed at [https://driveclub-driving-school.netlify.app/](http
 ### Learn About This Project
 
 1. An educational site which provides various driving lession service
-2. Api data fetched from [Mealhttps://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=whiteDB](https://www.themealdb.com/api.php/)
-3. React Routing enabled for different pages
+2. Api data self-generated and hosted from Local/Public folder
+3. All images are hosted at [imagebb.com](https://ibb.co/album/fMJ1XP).
+4. React Routing enabled for different pages
 
 ## 👩‍💻 Languages Used:
 

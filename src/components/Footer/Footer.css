@@ -1,3 +1,5 @@
+/* ------------------------------ footer styles ----------------------------- */
+
 .text link {
   text-decoration: none;
   color: white;
@@ -5,6 +7,7 @@
 .footer_area {
   position: relative;
   z-index: 1;
+  background: #111 !important;
   overflow: hidden;
 }
 .footer_area .row {
@@ -20,16 +23,15 @@
   position: relative;
   z-index: 1;
 }
-.single-footer-widget .copywrite-text a {
-  color: #747794;
-  font-size: 1rem;
-}
+
 .single-footer-widget .copywrite-text a:hover,
 .single-footer-widget .copywrite-text a:focus {
   color: #3f43fd;
 }
 .single-footer-widget .widget-title {
   margin-bottom: 1.5rem;
+  color: rgb(175, 17, 17);
+  padding-left: 25px;
 }
 .single-footer-widget .footer_menu li a {
   color: #747794;
@@ -55,9 +57,8 @@
   text-align: center;
   width: 40px;
   display: inline-block;
-  background-color: #f5f5ff;
+  background-color: #f5f5fe;
   line-height: 40px;
-  -webkit-box-shadow: none;
   box-shadow: none;
   margin-right: 10px;
 }
@@ -66,7 +67,7 @@
 }
 .footer_social_area a:hover,
 .footer_social_area a:focus {
-  color: #ffffff;
+  color: #ca1f1f;
 }
 
 ol li,

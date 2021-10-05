@@ -29,13 +29,17 @@ const Header = () => {
       <Box sx={{ width: "100vw" }}>
         <AppBar
           position="static"
-          sx={{ alignItems: "center", background: "#373737" }}
+          sx={{
+            alignItems: "center",
+            background: "#373737",
+          }}
         >
           <Toolbar>
             <BottomNavigation
               sx={{
                 width: "100vw",
                 marginBottom: "6px",
+                display: { xs: "none", sm: "none", md: "flex" },
               }}
               showLabels
               value={value}
@@ -72,13 +76,13 @@ const Header = () => {
         expand="lg"
         style={{
           backgroundColor: "#f1dfd1",
-          backgroundImage: "linear-gradient(315deg, #f1dfd1 0%, #f6f0ea 74%)",
+          backgroundImage: "linear-gradient(315deg, #f1dfd1 0%, #fde7e6 74%)",
           fontSize: "1.5rem",
           padding: 20,
         }}
       >
         <Container>
-          <Navbar.Brand href="#home">
+          <Navbar.Brand href="home">
             <img
               src={logo}
               width="150"
@@ -100,8 +104,8 @@ const Header = () => {
                   to="/home"
                   className="tags"
                   activeStyle={{
-                    fontWeight: "bold",
-                    color: "#fe421d",
+                    fontSize: "1.2em",
+                    color: "#837493",
                   }}
                 >
                   Home
@@ -112,7 +116,8 @@ const Header = () => {
                   className="tags"
                   to="/service"
                   activeStyle={{
-                    color: "#fe421d",
+                    fontSize: "1.2em",
+                    color: "#837493",
                   }}
                 >
                   Our Services
@@ -123,7 +128,8 @@ const Header = () => {
                   className="tags"
                   to="/about"
                   activeStyle={{
-                    color: "#fe421d",
+                    fontSize: "1.2em",
+                    color: "#837493",
                   }}
                 >
                   About Us
@@ -134,20 +140,13 @@ const Header = () => {
                   className="tags"
                   to="/testimonial"
                   activeStyle={{
-                    color: "#fe421d",
+                    fontSize: "1.2em",
+                    color: "#837493",
                   }}
                 >
                   Testimonials
                 </NavLink>
               </div>
-
-              <NavLink
-                className="tags"
-                to="/testimonial"
-                activeStyle={{
-                  color: "#fff",
-                }}
-              ></NavLink>
             </Nav>
           </Navbar.Collapse>
         </Container>
