@@ -58,7 +58,7 @@ const About = () => {
 
                 <div className="row text-center">
                   <div className="col-xl-12 col-sm-6 mb-5">
-                    <div className="bg-white rounded shadow-sm py-2 px-4">
+                    <div className="bg-white rounded shadow-sm py-5 px-4">
                       <img
                         src="https://i.ibb.co/L6GZnwJ/image-22.jpg"
                         alt=""
@@ -97,7 +97,7 @@ const About = () => {
 
                 <div className="row text-center">
                   <div className="col-xl-12 col-sm-6 mb-5">
-                    <div className="bg-white rounded shadow-sm py-2 px-4">
+                    <div className="bg-white rounded shadow-sm py-5 px-4">
                       <img
                         src="https://i.ibb.co/GF2g3FN/image-25.jpg"
                         alt=""
@@ -135,7 +135,7 @@ const About = () => {
 
                 <div className="row text-center">
                   <div className="col-xl-12 col-sm-6 mb-5">
-                    <div className="bg-white rounded shadow-sm py-2 px-4">
+                    <div className="bg-white rounded shadow-sm py-5 px-4">
                       <img
                         src="https://i.ibb.co/KFNQsWQ/image-24.jpg"
                         alt=""
@@ -173,7 +173,7 @@ const About = () => {
 
                 <div className="row text-center">
                   <div className="col-xl-12 col-sm-6 mb-5">
-                    <div className="bg-white rounded shadow-sm py-2 px-4">
+                    <div className="bg-white rounded shadow-sm py-5 px-4">
                       <img
                         src="https://i.ibb.co/tXqSF74/image-23.jpg"
                         alt=""
@@ -271,7 +271,7 @@ const About = () => {
                         placeholder="Leave your message"
                       ></textarea>
                     </div>
-                    <div className="form-group col-lg-12">
+                    <div className="form-group col-lg-12 py-4">
                       <button className="btn btn-outline-primary" type="submit">
                         Submit now
                       </button>
